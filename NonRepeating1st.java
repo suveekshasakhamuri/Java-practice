@@ -5,6 +5,7 @@ class NonRepeating1st
     {
         Scanner sc=new Scanner(System.in);
         String s=sc.next();
+        s=s.toLowerCase();
         HashMap<Character,Integer> map=new HashMap<>();
         for(int i=0;i<s.length();i++)
         {
@@ -16,13 +17,15 @@ class NonRepeating1st
         {
             char ch=s.charAt(i);
             if(map.get(ch)==1){
-                System.out.println(ch);
+                // System.out.println(ch);
+                System.out.println(i);
                 found = true;
                 break;
             }
         }
         if(found==false)
-          System.out.println("No non repeating characters");
+          // System.out.println("No non repeating characters");
+          System.out.println(-1);
     }
     
 }

@@ -66,7 +66,10 @@ class TwoSum
         {
             if(map.containsKey(target-arr[i]))
             {
-                System.out.println(map.get(target-arr[i])+" "+i);break;
+                // To print index
+                // System.out.println(map.get(target-arr[i])+" "+i);break;
+                // To print values
+                System.out.println(target-arr[i]+" "+arr[i]);break;
             }
             else{
                 map.put(arr[i],i);
